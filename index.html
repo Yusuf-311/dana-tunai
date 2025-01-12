@@ -108,6 +108,33 @@
           transform: rotate(360deg);
         }
       }
+
+      @keyframes scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(calc(-250px * 7));
+        }
+      }
+
+      .slider-brand {
+        height: 100px;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+        width: auto;
+      }
+      .slide-track {
+        animation: scroll 40s linear infinite;
+        display: flex;
+        width: calc(250px * 14);
+      }
+      .slide-brand {
+        height: 100px;
+        width: 250px;
+        margin: 0px 30px;
+      }
     </style>
     <!-- Page loading scripts-->
     <script>
@@ -372,81 +399,82 @@
 
     <!-- Brand -->
     <section class="container pt-5 mt-3 mt-md-0 pt-md-6 pt-lg-7 pb-md-4">
-      <h2 class="mb-5 text-center">Shop by brand</h2>
-      <div class="row">
-        <div class="col-md-3 col-sm-4 col-6 mb-grid-gutter">
-          <a class="card border-0 shadow card-hover py-3 py-sm-4" href="#">
-            <div class="card-body px-1 py-0 text-center">
-              <img
-                src="images/logo-brand-adira.png"
-                alt="Brand logo"
-                width="150"
-              /></div
-          ></a>
-        </div>
-        <div class="col-md-3 col-sm-4 col-6 mb-grid-gutter">
-          <a class="card border-0 shadow card-hover py-3 py-sm-4" href="#">
-            <div class="card-body px-1 py-0 text-center">
+      <p class="my-lg-4 text-bfi text-center fs-1 fw-bold mb-7">
+        Promo Spesial dan Informasi Bulan Ini
+      </p>
+
+      <div class="slider-brand">
+        <div class="slide-track">
+          <div class="slide-brand">
+            <a class="card border-0 shadow card-hover py-3 py-sm-4" href="#">
+              <div class="card-body px-1 py-0 text-center">
+                <img
+                  src="images/logo-brand-adira.png"
+                  alt="Brand logo"
+                  width="150"
+                /></div
+            ></a>
+          </div>
+          <div class="slide-brand">
+            <a class="card border-0 shadow card-hover py-3 py-sm-4" href="#">
               <div class="card-body px-1 py-0 text-center">
                 <img
                   src="images/logo-brand-baf.webp"
                   alt="Brand logo"
                   width="50"
-                />
-              </div></div
-          ></a>
-        </div>
-        <div class="col-md-3 col-sm-4 col-6 mb-grid-gutter">
-          <a class="card border-0 shadow card-hover py-3 py-sm-4" href="#">
-            <div class="card-body px-1 py-0 text-center">
+                /></div
+            ></a>
+          </div>
+          <div class="slide-brand">
+            <a class="card border-0 shadow card-hover py-3 py-sm-4" href="#">
               <div class="card-body px-1 py-0 text-center">
                 <img
                   src="images/logo-brand-bfi.png"
                   alt="Brand logo"
                   width="50"
-                />
-              </div></div
-          ></a>
-        </div>
-        <div class="col-md-3 col-sm-4 col-6 mb-grid-gutter">
-          <a class="card border-0 shadow card-hover py-3 py-sm-4" href="#">
-            <div class="card-body px-1 py-0 text-center">
-              <img
-                src="images/logo-brand-bfisyariah.png"
-                alt="Brand logo"
-                width="80"
-              /></div
-          ></a>
-        </div>
-        <div class="col-md-3 col-sm-4 col-6 mb-grid-gutter">
-          <a class="card border-0 shadow card-hover py-3 py-sm-4" href="#">
-            <div class="card-body px-1 py-0 text-center">
-              <img
-                src="images/logo-brand-fif.png"
-                alt="Brand logo"
-                width="170"
-              /></div
-          ></a>
-        </div>
-        <div class="col-md-3 col-sm-4 col-6 mb-grid-gutter">
-          <a class="card border-0 shadow card-hover py-3 py-sm-4" href="#">
-            <div class="card-body px-1 py-0 text-center">
-              <img
-                src="images/logo-brand-sampoerna.png"
-                alt="Brand logo"
-                width="50"
-              /></div
-          ></a>
-        </div>
-        <div class="col-md-3 col-sm-4 col-6 mb-grid-gutter">
-          <a class="card border-0 shadow card-hover py-3 py-sm-4" href="#">
-            <div class="card-body px-1 py-0 text-center">
-              <img
-                src="images/logo-brand-wom.png"
-                alt="Brand logo"
-                width="180"
-              /></div
-          ></a>
+                /></div
+            ></a>
+          </div>
+          <div class="slide-brand">
+            <a class="card border-0 shadow card-hover py-3 py-sm-4" href="#">
+              <div class="card-body px-1 py-0 text-center">
+                <img
+                  src="images/logo-brand-bfisyariah.png"
+                  alt="Brand logo"
+                  width="70"
+                /></div
+            ></a>
+          </div>
+          <div class="slide-brand">
+            <a class="card border-0 shadow card-hover py-3 py-sm-4" href="#">
+              <div class="card-body px-1 py-0 text-center">
+                <img
+                  src="images/logo-brand-fif.png"
+                  alt="Brand logo"
+                  width="150"
+                /></div
+            ></a>
+          </div>
+          <div class="slide-brand">
+            <a class="card border-0 shadow card-hover py-3 py-sm-4" href="#">
+              <div class="card-body px-1 py-0 text-center">
+                <img
+                  src="images/logo-brand-sampoerna.png"
+                  alt="Brand logo"
+                  width="50"
+                /></div
+            ></a>
+          </div>
+          <div class="slide-brand">
+            <a class="card border-0 shadow card-hover py-3 py-sm-4" href="#">
+              <div class="card-body px-1 py-0 text-center">
+                <img
+                  src="images/logo-brand-wom.png"
+                  alt="Brand logo"
+                  width="150"
+                /></div
+            ></a>
+          </div>
         </div>
       </div>
     </section>
@@ -2234,92 +2262,61 @@
         </div>
       </div>
     </section>
-    <footer class="footer bg-dark py-5" data-bs-theme="dark">
-      <div class="container pt-md-2 pt-lg-3 pt-xl-4">
-        <div class="row pb-5 pt-sm-2 mb-lg-2">
-          <div class="col-md-4 col-lg-4 pb-2 pb-md-0 mb-4 mb-md-0">
-            <p class="text-white h5 mb-3">PT Dana-tunai.id Indonesia Tbk</p>
-            <p class="text-light pb-2 pb-md-3 mb-3">
-              BFI Tower <br />
-              Sunburst CBD Lot. 1.2 <br />
-              Jl. Kapt. Soebijanto Djojohadikusumo <br />
-              BSD City - Tangerang Selatan 15322
-            </p>
-            <p class="text-light">Phone +62 21 2965 0300, 2965 0500</p>
-            <p class="text-light">Fax +62 21 2965 0757, 2965 0758</p>
-          </div>
-          <div class="col-lg-5">
-            <button class="btn btn-lg btn-outline-light">
-              Customer Care 1500018
-            </button>
+    <footer class="footer bg-dark pt-5 pb-4">
+      <div
+        class="container pb-2 text-center text-md-start"
+        bis_skin_checked="1"
+      >
+        <div class="row pt-md-2 pb-3" bis_skin_checked="1">
+          <div class="col-lg-3 col-md-4 pb-4" bis_skin_checked="1">
+            <div class="">
+              <img
+                class="bg-light rounded-3"
+                src="images/Dana-Tunai-Logo.png"
+                width="50"
+                alt=""
+              />
+              <p class="fs-3 fw-bold text-light">Dana Tunai</p>
+            </div>
 
-            <div class="row">
-              <div class="col-12">
-                <label
-                  for="formGroupExampleInput"
-                  class="form-label text-light fs-5 mt-lg-5 mt-3"
-                  >Buletin</label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  id="formGroupExampleInput"
-                  placeholder="Masukan Email Disini"
-                />
-              </div>
-              <div class="col align-bottom align-content-end mt-2">
-                <button class="btn btn-warning my-auto">Kirim</button>
-              </div>
-            </div>
-          </div>
-          <div class="col mt-4 mt-lg-0">
-            <div class="mb-4">
-              <a
-                class="btn-social bs-facebook bs-light bs-lg me-2 mb-2"
-                href="#"
-                ><i class="ai-facebook fs-3"></i
-              ></a>
-              <a
-                class="btn-social bs-facebook bs-light bs-lg me-2 mb-2"
-                href="#"
-                ><i class="ai-instagram fs-3"></i
-              ></a>
-              <a
-                class="btn-social bs-facebook bs-light bs-lg me-2 mb-2"
-                href="#"
-                ><i class="ai-youtube fs-3"></i
-              ></a>
-              <a
-                class="btn-social bs-facebook bs-light bs-lg me-2 mb-2"
-                href="#"
-                ><i class="ai-twitter fs-3"></i
-              ></a>
-              <a
-                class="btn-social bs-facebook bs-light bs-lg me-2 mb-2"
-                href="#"
-                ><i class="ai-linkedin fs-3"></i
-              ></a>
-              <a
-                class="btn-social bs-facebook bs-light bs-lg me-2 mb-2"
-                href="#"
-                ><i class="ai-mail fs-3"></i
-              ></a>
-            </div>
-            <p class="text-light">
-              Dana-tunai.id berizin dan diawasi oleh Otoritas Jasa Keuangan
+            <p class="fs-sm text-light opacity-50 mb-0">
+              Proudly Present by Tiga Pilar Digital Inc We are All Around You
             </p>
+          </div>
+          <div class="col-md-5 pt-2 pb-4" bis_skin_checked="1"></div>
+          <div class="col-md-3 pt-2 pb-4" bis_skin_checked="1">
+            <div class="widget widget-light" bis_skin_checked="1">
+              <h4 class="widget-title mb-3">Follow</h4>
+              <a
+                class="btn-social bs-outline bs-light bs-facebook bs-lg me-2 mb-2"
+                href="#"
+                ><i class="bi bi-facebook"></i></a
+              ><a
+                class="btn-social bs-outline bs-light bs-twitter bs-lg me-2 mb-2"
+                href="#"
+                ><i class="bi bi-twitter"></i></a
+              ><a
+                class="btn-social bs-outline bs-light bs-instagram bs-lg me-2 mb-2"
+                href="#"
+                ><i class="bi bi-instagram"></i></a
+              ><a
+                class="btn-social bs-outline bs-light bs-google bs-lg mb-2"
+                href="#"
+                ><i class="bi bi-google"></i
+              ></a>
+            </div>
           </div>
         </div>
-        <!-- <p class="nav fs-sm mb-0">
-            <span class="text-light"
-              >© All rights reserved. Made by
-              <a href="https://netfin.id/" class="text-primary">Netfin</a>
-            </span>
-          </p> -->
-        <p class="nav fs-sm mb-0">
-          <span class="text-light"
-            >© 2024 - PT Dana-tunai.id Indonesia Tbk
-          </span>
+        <p class="fs-sm text-center mb-0">
+          <span class="text-light opacity-50"
+            >© All rights reserved. Made by </span
+          ><a
+            class="nav-link-style nav-link-light"
+            href="#"
+            target="_blank"
+            rel="noopener"
+            >Netfin</a
+          >
         </p>
       </div>
     </footer>
